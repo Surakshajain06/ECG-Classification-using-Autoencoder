@@ -23,7 +23,7 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
     <img src="Images\ECG_types.png" alt="Beat_types" width="100%"/>
     <figcaption>
       <p style="font-size:13px; margin-top: 8px;">
-        <b>Figure 2:</b> ECG signal summary
+        <b>Figure 2:</b> Beat_types
       </p>
     </figcaption>
   </figure>
