@@ -29,13 +29,13 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
   </figure>
 </div>
 
-## 1. Normal Beat (N)
+### 1. Normal Beat (N)
 **Looks like:**
 - Clear **P wave**, sharp **QRS complex**, smooth **T wave**.
 - Evenly spaced (**regular rhythm**).
 - Consistent amplitude and shape in the same lead.
 
-## 2. Atrial Premature Beat (APB / A)
+### 2. Atrial Premature Beat (APB / A)
 **Looks like:**
 - Comes **earlier than expected** (interrupts normal rhythm).
 - **P wave** may look different or be hidden in QRS.
@@ -43,14 +43,14 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
 - Shorter **R–R interval** before it, then a pause afterward.
 - Early spike with **no P wave** and **improper QRS shape** → possible noise.
 
-## 3. Ventricular Beat (V)  
+### 3. Ventricular Beat (V)  
 - **Wide QRS** (≥120 ms), abnormal shape.
 - No visible **P wave** before it.
 - **T wave** usually in opposite direction of main QRS spike.
 - May come early or in regular ventricular rhythm.
 - Very narrow but tall spike is **not ventricular** (likely noise).
 
-## 4. Paced Beat (+)
+### 4. Paced Beat (+)
 **Looks like:**
 - Very small, sharp **pacemaker spike** before QRS.
 - QRS often wide or unusual after spike.
@@ -60,7 +60,7 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
 
 ---
 
-## Artifact Clues for Any Beat Type
+### Artifact Clues for Any Beat Type
 - Appears only in **one lead**.
 - Shape doesn’t match surrounding beats.
 - Happens **too soon** after last QRS (<200 ms).
