@@ -59,10 +59,10 @@ Originates from the atria and occurs earlier than expected in the normal rhythm.
 Arises from the ventricles, either too early (PVC) or as a backup rhythm when higher pacemakers fail (escape).
 
 **F (Fusion Beats)**
-&nbspA hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
+&nbsp;A hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
 
 **Q (Unknown/Other Beats)**
-&nbspBeats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
+&nbsp;Beats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
 
 <div align="center">
   <figure>
