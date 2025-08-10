@@ -1,10 +1,10 @@
 # ECG Signal Classification Using Autoencoder Features
 
 ## Problem Statement:
-The aim is to classify normal and abnormal heartbeats from MIT-BIH ECG data by first using a 1D convolutional autoencoder to extract compressed heartbeat features, then training classifiers like Random Forest or XGBoost on these features. This reduces noise and dimensionality, improving efficiency and accuracy in arrhythmia detection.
+&nbspThe aim is to classify normal and abnormal heartbeats from MIT-BIH ECG data by first using a 1D convolutional autoencoder to extract compressed heartbeat features, then training classifiers like Random Forest or XGBoost on these features. This reduces noise and dimensionality, improving efficiency and accuracy in arrhythmia detection.
 
 ## Exploratory data analysis
-Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, total samples, and lead information. It also lists the number of detected heartbeats based on R-peak annotations.
+&nbspEach row summarizes one MIT-BIH ECG record, including its ID, sampling rate, total samples, and lead information. It also lists the number of detected heartbeats based on R-peak annotations.
 <div align="center">
   <figure>
     <img src="Images/Signal_summary.png" alt="ECG signal summary" width="100%"/>
@@ -31,7 +31,7 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
 
 
 ## AAMI EC57 Standard groups    
-The Association for the Advancement of Medical Instrumentation (AAMI) EC57 standard groups MIT-BIH ECG beat annotations into five classes (N, S, V, F, Q) to standardize arrhythmia classification and make research results comparable. This grouping reduces the large number of original beat types, addresses class imbalance, and reflects clinically meaningful arrhythmia categories.
+&nbspThe Association for the Advancement of Medical Instrumentation (AAMI) EC57 standard groups MIT-BIH ECG beat annotations into five classes (N, S, V, F, Q) to standardize arrhythmia classification and make research results comparable. This grouping reduces the large number of original beat types, addresses class imbalance, and reflects clinically meaningful arrhythmia categories.
 
 <div align="center">
   <figure>
@@ -44,25 +44,25 @@ The Association for the Advancement of Medical Instrumentation (AAMI) EC57 stand
   </figure>
 </div>
 
-The Association for the Advancement of Medical Instrumentation (AAMI) standardizes ECG beat classification into five main groups:
+&nbspThe Association for the Advancement of Medical Instrumentation (AAMI) standardizes ECG beat classification into five main groups:
 
 **N (Normal Beats)**
-  Includes normal sinus beats, left/right bundle branch block beats, and atrial escape beats.
+&nbspIncludes normal sinus beats, left/right bundle branch block beats, and atrial escape beats.
 These represent regular heart rhythms without significant abnormalities.
 
 **S (Supraventricular Ectopic Beats)**
-  Includes atrial premature beats and aberrant atrial premature beats.
+&nbspIncludes atrial premature beats and aberrant atrial premature beats.
 Originates from the atria and occurs earlier than expected in the normal rhythm.
 
 **V (Ventricular Ectopic Beats)**
-  Includes premature ventricular contractions (PVCs) and ventricular escape beats.
+&nbspIncludes premature ventricular contractions (PVCs) and ventricular escape beats.
 Arises from the ventricles, either too early (PVC) or as a backup rhythm when higher pacemakers fail (escape).
 
 **F (Fusion Beats)**
-  A hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
+&nbspA hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
 
 **Q (Unknown/Other Beats)**
-  Beats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
+&nbspBeats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
 
 <div align="center">
   <figure>
