@@ -46,23 +46,23 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Association for the Advancement of Medical Instrumentation (AAMI) standardizes ECG beat classification into five main groups:
 
-**N (Normal Beats)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Includes normal sinus beats, left/right bundle branch block beats, and atrial escape beats.
+**<u>N (Normal Beats)<u>**   
+Includes normal sinus beats, left/right bundle branch block beats, and atrial escape beats.
 These represent regular heart rhythms without significant abnormalities.
 
-**S (Supraventricular Ectopic Beats)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Includes atrial premature beats and aberrant atrial premature beats.
+**<u>S (Supraventricular Ectopic Beats)<u>**   
+Includes atrial premature beats and aberrant atrial premature beats.
 Originates from the atria and occurs earlier than expected in the normal rhythm.
 
-**V (Ventricular Ectopic Beats)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Includes premature ventricular contractions (PVCs) and ventricular escape beats.
+**<u>V (Ventricular Ectopic Beats)**   
+Includes premature ventricular contractions (PVCs) and ventricular escape beats.
 Arises from the ventricles, either too early (PVC) or as a backup rhythm when higher pacemakers fail (escape).
 
-**F (Fusion Beats)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;A hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
+**<u>F (Fusion Beats)<u>**   
+A hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
 
-**Q (Unknown/Other Beats)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;Beats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
+**<u>Q (Unknown/Other Beats)<u>**   
+Beats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
 
 <div align="center">
   <figure>
