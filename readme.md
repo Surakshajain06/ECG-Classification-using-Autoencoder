@@ -10,7 +10,7 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
     <img src="Images/Signal_summary.png" alt="ECG signal summary" width="100%"/>
     <figcaption>
       <p style="font-size:13px; margin-top: 8px;">
-        <b>Figure 1:</b> ECG signal summary
+        <b>Table 1:</b> ECG signal summary
       </p>
     </figcaption>
   </figure>
@@ -23,48 +23,54 @@ Each row summarizes one MIT-BIH ECG record, including its ID, sampling rate, tot
     <img src="Images\ECG_types.png" alt="Beat_types" width="100%"/>
     <figcaption>
       <p style="font-size:13px; margin-top: 8px;">
-        <b>Figure 2:</b> Beat_types
+        <b>Figure 1:</b> Beat_types
       </p>
     </figcaption>
   </figure>
 </div>
 
-### 1. Normal Beat (N)
-**Looks like:**
-- Clear **P wave**, sharp **QRS complex**, smooth **T wave**.
-- Evenly spaced (**regular rhythm**).
-- Consistent amplitude and shape in the same lead.
 
-### 2. Atrial Premature Beat (APB / A)
-**Looks like:**
-- Comes **earlier than expected** (interrupts normal rhythm).
-- **P wave** may look different or be hidden in QRS.
-- QRS is usually narrow (unless abnormal conduction).
-- Shorter **R–R interval** before it, then a pause afterward.
-- Early spike with **no P wave** and **improper QRS shape** → possible noise.
+## AAMI EC57 Standard groups    
+The Association for the Advancement of Medical Instrumentation (AAMI) EC57 standard groups MIT-BIH ECG beat annotations into five classes (N, S, V, F, Q) to standardize arrhythmia classification and make research results comparable. This grouping reduces the large number of original beat types, addresses class imbalance, and reflects clinically meaningful arrhythmia categories.
 
-### 3. Ventricular Beat (V)  
-- **Wide QRS** (≥120 ms), abnormal shape.
-- No visible **P wave** before it.
-- **T wave** usually in opposite direction of main QRS spike.
-- May come early or in regular ventricular rhythm.
-- Very narrow but tall spike is **not ventricular** (likely noise).
+<div align="center">
+  <figure>
+    <img src="Images\different groups found.png" alt="Different_heart_beats" width="100%"/>
+    <figcaption>
+      <p style="font-size:13px; margin-top: 8px;">
+        <b>Figure 2 :</b> Different_heart_beats
+      </p>
+    </figcaption>
+  </figure>
+</div>
 
-### 4. Paced Beat (+)
-**Looks like:**
-- Very small, sharp **pacemaker spike** before QRS.
-- QRS often wide or unusual after spike.
-- Often very regular if patient is paced.
-- Spike without a QRS in all leads → noise.
-- True pacing spikes are narrow and followed by consistent ventricular complex.
+The Association for the Advancement of Medical Instrumentation (AAMI) standardizes ECG beat classification into five main groups:
 
----
+**N (Normal Beats)**
+  Includes normal sinus beats, left/right bundle branch block beats, and atrial escape beats.
+These represent regular heart rhythms without significant abnormalities.
 
-### Artifact Clues for Any Beat Type
-- Appears only in **one lead**.
-- Shape doesn’t match surrounding beats.
-- Happens **too soon** after last QRS (<200 ms).
-- Extremely sharp vertical edges, no real QRS morphology.
-- Baseline jumps before/after spike.
+**S (Supraventricular Ectopic Beats)**
+  Includes atrial premature beats and aberrant atrial premature beats.
+Originates from the atria and occurs earlier than expected in the normal rhythm.
 
+**V (Ventricular Ectopic Beats)**
+  Includes premature ventricular contractions (PVCs) and ventricular escape beats.
+Arises from the ventricles, either too early (PVC) or as a backup rhythm when higher pacemakers fail (escape).
 
+**F (Fusion Beats)**
+  A hybrid beat created when an ectopic ventricular beat coincides with a normal beat, producing a waveform with mixed characteristics.
+
+**Q (Unknown/Other Beats)**
+  Beats that cannot be classified into the above groups due to noise, artifacts, or rare morphologies.
+
+<div align="center">
+  <figure>
+    <img src="Images\Table1.png" alt="Grouping_of_heart_beats" width="100%"/>
+    <figcaption>
+      <p style="font-size:13px; margin-top: 8px;">
+        <b>Figure 2 :</b> Grouping_of_heart_beats
+      </p>
+    </figcaption>
+  </figure>
+</div>
