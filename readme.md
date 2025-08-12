@@ -20,10 +20,10 @@
 
 <div align="center">
   <figure>
-    <img src="Images\ECG_types.png" alt="Beat_types" width="100%"/>
+    <img src="Images\ECG_types.png" alt="Few_Beat_types" width="100%"/>
     <figcaption>
       <p style="font-size:13px; margin-top: 8px;">
-        <b>Figure 1:</b> Beat_types
+        <b>Figure 1:</b> Few_Beat_types
       </p>
     </figcaption>
   </figure>
@@ -35,10 +35,10 @@
 
 <div align="center">
   <figure>
-    <img src="Images\different groups found.png" alt="Few_Different_heart_beats" width="100%"/>
+    <img src="Images\different groups found.png" alt="Different_heart_beats" width="100%"/>
     <figcaption>
       <p style="font-size:13px; margin-top: 8px;">
-        <b>Figure 2 :</b> Few_Different_heart_beats
+        <b>Figure 2 :</b> Different_heart_beats
       </p>
     </figcaption>
   </figure>
